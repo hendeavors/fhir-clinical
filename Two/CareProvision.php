@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Endeavors\Fhir\Http\Contracts\Clinical\STU3;
+namespace Endeavors\Fhir\Http\Contracts\Clinical\Two;
 
 use Psr\Http\Message\{RequestInterface, ResponseInterface};
 use Endeavors\Fhir\Http\Contracts\Clinical\Shared\CareProvision as SharedCareProvision;
@@ -19,13 +19,6 @@ use Endeavors\Fhir\Http\Contracts\Clinical\Shared\CareProvision as SharedCarePro
 interface CareProvision extends SharedCareProvision
 {
     /**
-     * [careTeam description]
-     * @param  RequestInterface  $request [description]
-     * @return ResponseInterface          [description]
-     */
-    public function careTeam(RequestInterface $request): ResponseInterface;
-
-    /**
      * [referralRequest description]
      * @param  RequestInterface  $request [description]
      * @return ResponseInterface          [description]
@@ -38,18 +31,4 @@ interface CareProvision extends SharedCareProvision
      * @return ResponseInterface          [description]
      */
     public function procedureRequest(RequestInterface $request): ResponseInterface;
-
-    /**
-     * [riskAssessment description]
-     * @param  RequestInterface  $request [description]
-     * @return ResponseInterface          [description]
-     */
-    public function riskAssessment(RequestInterface $request): ResponseInterface;
-
-    /**
-     * [requestGroup description]
-     * @param  RequestInterface  $request [description]
-     * @return ResponseInterface          [description]
-     */
-    public function requestGroup(RequestInterface $request): ResponseInterface;
 }

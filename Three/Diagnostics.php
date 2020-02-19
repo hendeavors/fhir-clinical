@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Endeavors\Fhir\Http\Contracts\Clinical\R4;
+namespace Endeavors\Fhir\Http\Contracts\Clinical\Three;
 
 use Psr\Http\Message\{RequestInterface, ResponseInterface};
 
@@ -20,13 +20,6 @@ interface Diagnostics
     public function observation(RequestInterface $request): ResponseInterface;
 
     /**
-     * [media description]
-     * @param  RequestInterface  $request [description]
-     * @return ResponseInterface          [description]
-     */
-    public function media(RequestInterface $request): ResponseInterface;
-
-    /**
      * [diagnosticReport description]
      * @param  RequestInterface  $request [description]
      * @return ResponseInterface          [description]
@@ -41,11 +34,11 @@ interface Diagnostics
     public function specimen(RequestInterface $request): ResponseInterface;
 
     /**
-     * [bodyStructure description]
+     * [bodySite description]
      * @param  RequestInterface  $request [description]
      * @return ResponseInterface          [description]
      */
-    public function bodyStructure(RequestInterface $request): ResponseInterface;
+    public function bodySite(RequestInterface $request): ResponseInterface;
 
     /**
      * [imagingStudy description]
@@ -55,9 +48,16 @@ interface Diagnostics
     public function imagingStudy(RequestInterface $request): ResponseInterface;
 
     /**
-     * [molecularSequence description]
+     * [imagingManifest description]
      * @param  RequestInterface  $request [description]
      * @return ResponseInterface          [description]
      */
-    public function molecularSequence(RequestInterface $request): ResponseInterface;
+    public function imagingManifest(RequestInterface $request): ResponseInterface;
+
+    /**
+     * [sequence description]
+     * @param  RequestInterface  $request [description]
+     * @return ResponseInterface          [description]
+     */
+    public function sequence(RequestInterface $request): ResponseInterface;
 }

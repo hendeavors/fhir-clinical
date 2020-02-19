@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Endeavors\Fhir\Http\Contracts\Clinical\STU3;
+namespace Endeavors\Fhir\Http\Contracts\Clinical\Three;
 
 use Psr\Http\Message\{RequestInterface, ResponseInterface};
 use Endeavors\Fhir\Http\Contracts\Clinical\Shared\Summary as SharedSummary;

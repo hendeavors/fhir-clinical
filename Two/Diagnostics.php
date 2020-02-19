@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Endeavors\Fhir\Http\Contracts\Clinical\STU3;
+namespace Endeavors\Fhir\Http\Contracts\Clinical\Two;
 
 use Psr\Http\Message\{RequestInterface, ResponseInterface};
 
@@ -27,6 +27,13 @@ interface Diagnostics
     public function diagnosticReport(RequestInterface $request): ResponseInterface;
 
     /**
+     * [diagnosticOrder description]
+     * @param  RequestInterface  $request [description]
+     * @return ResponseInterface          [description]
+     */
+    public function diagnosticOrder(RequestInterface $request): ResponseInterface;
+
+    /**
      * [specimen description]
      * @param  RequestInterface  $request [description]
      * @return ResponseInterface          [description]
@@ -48,16 +55,9 @@ interface Diagnostics
     public function imagingStudy(RequestInterface $request): ResponseInterface;
 
     /**
-     * [imagingManifest description]
+     * [imagingObjectSelection description]
      * @param  RequestInterface  $request [description]
      * @return ResponseInterface          [description]
      */
-    public function imagingManifest(RequestInterface $request): ResponseInterface;
-
-    /**
-     * [sequence description]
-     * @param  RequestInterface  $request [description]
-     * @return ResponseInterface          [description]
-     */
-    public function sequence(RequestInterface $request): ResponseInterface;
+    public function imagingObjectSelection(RequestInterface $request): ResponseInterface;
 }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Endeavors\Fhir\Http\Contracts\Clinical\DSTU2;
+namespace Endeavors\Fhir\Http\Contracts\Clinical\Four;
 
 use Psr\Http\Message\{RequestInterface, ResponseInterface};
 
@@ -20,18 +20,18 @@ interface Diagnostics
     public function observation(RequestInterface $request): ResponseInterface;
 
     /**
+     * [media description]
+     * @param  RequestInterface  $request [description]
+     * @return ResponseInterface          [description]
+     */
+    public function media(RequestInterface $request): ResponseInterface;
+
+    /**
      * [diagnosticReport description]
      * @param  RequestInterface  $request [description]
      * @return ResponseInterface          [description]
      */
     public function diagnosticReport(RequestInterface $request): ResponseInterface;
-
-    /**
-     * [diagnosticOrder description]
-     * @param  RequestInterface  $request [description]
-     * @return ResponseInterface          [description]
-     */
-    public function diagnosticOrder(RequestInterface $request): ResponseInterface;
 
     /**
      * [specimen description]
@@ -41,11 +41,11 @@ interface Diagnostics
     public function specimen(RequestInterface $request): ResponseInterface;
 
     /**
-     * [bodySite description]
+     * [bodyStructure description]
      * @param  RequestInterface  $request [description]
      * @return ResponseInterface          [description]
      */
-    public function bodySite(RequestInterface $request): ResponseInterface;
+    public function bodyStructure(RequestInterface $request): ResponseInterface;
 
     /**
      * [imagingStudy description]
@@ -55,9 +55,9 @@ interface Diagnostics
     public function imagingStudy(RequestInterface $request): ResponseInterface;
 
     /**
-     * [imagingObjectSelection description]
+     * [molecularSequence description]
      * @param  RequestInterface  $request [description]
      * @return ResponseInterface          [description]
      */
-    public function imagingObjectSelection(RequestInterface $request): ResponseInterface;
+    public function molecularSequence(RequestInterface $request): ResponseInterface;
 }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Endeavors\Fhir\Http\Contracts\Clinical\R4;
+namespace Endeavors\Fhir\Http\Contracts\Clinical\Four;
 
 use Psr\Http\Message\{RequestInterface, ResponseInterface};
 use Endeavors\Fhir\Http\Contracts\Clinical\Shared\CareProvision as SharedCareProvision;
