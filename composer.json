@@ -1,0 +1,16 @@
+{
+    "name": "endeavors/fhir-clinical",
+    "license": "MIT",
+    "require": {
+        "php": "^7.1",
+        "psr/http-message": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Endeavors\\Fhir\\Http\\Contracts\\Clinical\\": "src/"
+        }
+    },
+    "suggest": {
+        "endeavors/smart-fhirclient": "Parse fhir resource into usable data transfer objects"
+    }
+}
