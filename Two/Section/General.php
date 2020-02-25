@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Endeavors\Fhir\Http\Contracts\Clinical\Two;
+namespace Endeavors\Fhir\Http\Contracts\Clinical\Two\Section;
 
 use Psr\Http\Message\{RequestInterface, ResponseInterface};
 use Endeavors\Fhir\Http\Contracts\Clinical\Shared\General as SharedGeneral;
