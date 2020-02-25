@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Endeavors\Fhir\Http\Contracts\Clinical\Three;
+namespace Endeavors\Fhir\Http\Contracts\Clinical\Three\Section;
 
 use Psr\Http\Message\{RequestInterface, ResponseInterface};
 
