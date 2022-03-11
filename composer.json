@@ -2,7 +2,7 @@
     "name": "endeavors/fhir-clinical",
     "license": "Unlicense",
     "require": {
-        "php": "^7.1",
+        "php": "^7.1|^8.0",
         "psr/http-message": "^1.0"
     },
     "autoload": {
